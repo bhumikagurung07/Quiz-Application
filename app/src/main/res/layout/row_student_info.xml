@@ -1,0 +1,92 @@
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:gravity="center_vertical"
+        android:background="@android:color/white">
+
+        <TextView
+            android:id="@+id/txtstusid"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:padding="4dp"
+            android:textAlignment="viewStart"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/txtstuspid"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:textAlignment="viewStart"
+            android:padding="4dp"
+            android:maxLines="1"
+            android:ellipsize="end" />
+
+        <TextView
+            android:id="@+id/txtstupassword"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:textAlignment="viewStart"
+            android:padding="4dp"
+            android:maxLines="1"
+            android:ellipsize="end" />
+
+        <TextView
+            android:id="@+id/txtstuname"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:textAlignment="viewStart"
+            android:padding="4dp"
+            android:maxLines="1"
+            android:ellipsize="end" />
+
+        <TextView
+            android:id="@+id/txtstuphone"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:textAlignment="viewStart"
+            android:padding="4dp"
+            android:maxLines="1"
+            android:ellipsize="end" />
+
+        <TextView
+            android:id="@+id/txtstudob"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:textAlignment="viewStart"
+            android:padding="4dp"
+            android:maxLines="1"
+            android:ellipsize="end" />
+
+        <TextView
+            android:id="@+id/txtstudept"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"
+            android:textAlignment="viewStart"
+            android:padding="4dp"
+            android:maxLines="1"
+            android:ellipsize="end" />
+
+    </LinearLayout>
+</HorizontalScrollView>

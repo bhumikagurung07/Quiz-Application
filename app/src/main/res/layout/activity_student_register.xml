@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="12dp"
+                android:layout_marginTop="32dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal">
+
+                    <!-- Round ImageView using ShapeableImageView -->
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/iv_student_image"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_gravity="center"
+                        android:scaleType="centerCrop"
+                        android:background="@android:color/darker_gray"
+                        android:onClick="selectImage"
+                        android:src="@drawable/stud"
+                        android:layout_marginBottom="16dp"
+                        android:clipToOutline="true"
+                        app:shapeAppearanceOverlay="@style/RoundedImage"/>
+
+                    <!-- SPID Input -->
+                    <EditText
+                        android:id="@+id/et_spid"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="SPID"
+                        android:inputType="text"
+                        android:layout_marginBottom="8dp"/>
+
+                    <!-- Password Input -->
+                    <EditText
+                        android:id="@+id/et_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Password"
+                        android:inputType="textPassword"
+                        android:layout_marginBottom="8dp"/>
+
+                    <!-- Full Name -->
+                    <EditText
+                        android:id="@+id/et_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Full Name"
+                        android:inputType="text"
+                        android:layout_marginBottom="8dp"/>
+
+                    <!-- Phone Number -->
+                    <EditText
+                        android:id="@+id/et_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Phone Number"
+                        android:inputType="phone"
+                        android:layout_marginBottom="8dp"/>
+
+                    <!-- Date of Birth -->
+                    <EditText
+                        android:id="@+id/et_dob"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Date of Birth (YYYY-MM-DD)"
+                        android:focusable="false"
+                        android:clickable="true"
+                        android:layout_marginBottom="8dp"/>
+
+                    <!-- Department Spinner -->
+                    <Spinner
+                        android:id="@+id/spinner_department"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Register Button -->
+            <Button
+                android:id="@+id/btn_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Register"
+                android:backgroundTint="@android:color/holo_blue_dark"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="16dp"/>
+
+            <!-- Already have an account? Login -->
+            <TextView
+                android:id="@+id/tv_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Already have an account? Login"
+                android:textColor="@android:color/holo_blue_dark"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:focusable="true"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

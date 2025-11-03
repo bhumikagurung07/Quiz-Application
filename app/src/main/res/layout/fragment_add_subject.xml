@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".FragmentAddSubject">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/title_add_subject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Subject"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="16dp"/>
+
+    <!-- Subject ID Input -->
+    <EditText
+        android:id="@+id/editTextSubId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Subject ID"
+        android:padding="12dp"
+        android:background="@drawable/custom_edittext"
+        android:layout_below="@id/title_add_subject"
+        android:layout_marginTop="12dp"/>
+
+    <!-- Subject Name Input -->
+    <EditText
+        android:id="@+id/editTextSubName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Subject Name"
+        android:padding="12dp"
+        android:background="@drawable/custom_edittext"
+        android:layout_below="@id/editTextSubId"
+        android:layout_marginTop="12dp"/>
+
+    <!-- Department Spinner -->
+    <Spinner
+        android:id="@+id/spinnerDept"
+        android:layout_width="383dp"
+        android:layout_height="71dp"
+        android:layout_below="@id/editTextSubName"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/custom_edittext"
+        android:padding="8dp" />
+
+    <!-- Teacher Spinner -->
+    <Spinner
+        android:id="@+id/spinnerTech"
+        android:layout_width="380dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/spinnerDept"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/custom_edittext"
+        android:padding="8dp" />
+
+    <!-- Clickable ImageView for Image Selection -->
+    <ImageView
+        android:id="@+id/imagePreview"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_below="@id/spinnerTech"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/custom_edittext"
+        android:clickable="true"
+        android:focusable="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/stud"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <!-- Add Subject Button -->
+    <Button
+        android:id="@+id/btnAddSubject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Subject"
+        android:layout_below="@id/imagePreview"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/dark_blue"/>
+
+</RelativeLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="12dp"
+    card_view:cardElevation="6dp"
+    android:layout_margin="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp"
+        android:background="#EAF1FA">
+
+        <TextView
+            android:id="@+id/textQNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Q1"
+            android:textStyle="bold"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/textQuestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="What is Android?"
+            android:textColor="#000000"
+            android:paddingTop="4dp" />
+
+        <TextView
+            android:id="@+id/textOptionA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A. Java"
+            android:paddingTop="2dp" />
+
+        <TextView
+            android:id="@+id/textOptionB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="B. Kotlin"
+            android:paddingTop="2dp" />
+
+        <TextView
+            android:id="@+id/textOptionC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C. Swift"
+            android:paddingTop="2dp" />
+
+        <TextView
+            android:id="@+id/textOptionD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="D. Dart"
+            android:paddingTop="2dp" />
+
+        <TextView
+            android:id="@+id/textCorrectAnswer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Correct Answer: Kotlin"
+            android:textColor="#0D47A1"
+            android:textStyle="bold"
+            android:paddingTop="4dp" />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

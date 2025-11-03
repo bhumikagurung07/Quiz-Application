@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    android:background="#FFFFFF"
+    tools:context=".FragmentAddQuestion">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:elevation="6dp"
+            android:padding="16dp"
+            android:backgroundTint="#FAFAFA"
+            app:cardCornerRadius="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add New Question"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#0D47A1"
+                    android:layout_marginBottom="16dp" />
+
+                <EditText
+                    android:id="@+id/editQuestion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Question"
+                    android:inputType="textMultiLine"
+                    android:minLines="2"
+                    android:backgroundTint="#0D47A1" />
+
+                <EditText
+                    android:id="@+id/editOptionA"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Option A"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="#0D47A1" />
+
+                <EditText
+                    android:id="@+id/editOptionB"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Option B"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="#0D47A1" />
+
+                <EditText
+                    android:id="@+id/editOptionC"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Option C"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="#0D47A1" />
+
+                <EditText
+                    android:id="@+id/editOptionD"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Option D"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="#0D47A1" />
+
+                <EditText
+                    android:id="@+id/editCorrectAnswer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Correct Answer"
+                    android:layout_marginTop="10dp"
+                    android:backgroundTint="#0D47A1" />
+
+                <Button
+                    android:id="@+id/buttonSubmit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Submit"
+                    android:textAllCaps="false"
+                    android:layout_marginTop="20dp"
+                    android:backgroundTint="#0D47A1"
+                    android:textColor="#FFFFFF"
+                    android:layout_gravity="center_horizontal" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</ScrollView>
